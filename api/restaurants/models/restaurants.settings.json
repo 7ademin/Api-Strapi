@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "Restaurants"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nomRestaurant": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "plats": {
+      "collection": "plat",
+      "via": "restaurant"
+    }
+  }
+}
